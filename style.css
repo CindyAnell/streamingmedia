@@ -5,7 +5,7 @@ body{
  }
  html {
     background: #020659;
-    font: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase ;
     color: #ffffff
  }
@@ -183,6 +183,25 @@ header{
  }
 
 
+
+/* AUDIO */
+
+ audio::-webkit-media-controls-mute-button {
+    background-color:#ffffff;
+    border-radius:50%;
+ }
+ audio::-webkit-media-controls-play-button {
+    background-color:#ffffff;
+    border-radius:50%;
+ }
+ audio::-webkit-media-controls-enclosure {
+    background-color:rgba(255,255,255,.5);
+ }
+
+
+
+
+
 /* BACKGROUND COLOR FOR EACH PLAYLIST SECTION */
 
  #your-playlists{
@@ -199,25 +218,33 @@ header{
 
 
 
-/* COLOR FOR CONTENT WITHIN PLAYLISTS */
+/* YOUR PLAYLISTS AND CURATED PLAYLISTS*/
 
 #your-playlists .scroll img{
     background-color: #0D8DFB;
     align-content: center;
-    grid-area: 1/5;
+    grid-area: 1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: .30rem;
 }
 
 #your-playlists .scroll h3{
     background-color: #0D8DFB;
     align-content: center;
-    grid-area: 2/5;
+    grid-area: 2;
+    border-radius: .30rem;
 }
 
 #your-playlists .scroll p{
     background-color: #0D8DFB;
     align-content: center;
-    grid-area: 3/5;
+    grid-area: 3;
+    text-transform: lowercase;
+    border-radius: .30rem;
+    padding:1rem;
 }
+
 
 
 #curated-playlists{
@@ -229,19 +256,25 @@ header{
 #curated-playlists .scroll img{
     background-color:#020873;
     align-content: center;
-    grid-area: 1/5;
-   
+    grid-area: 1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: .30rem;
+    
 }
 #curated-playlists .scroll h3{
     background-color:#020873;
     align-content: center;
-    grid-area: 2/5;
+    grid-area: 2;
+    border-radius: .30rem;
    
 }
 #curated-playlists .scroll p{
     background-color:#020873;
     align-content: center;
-    grid-area: 3/5;
+    grid-area: 3;
+    padding: 1rem;
+    text-transform: lowercase;
+    border-radius: .30rem;
    
 }
-
